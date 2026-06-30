@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Dear Wife ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ff758c,#ff7eb3);
+    min-height:100vh;
+    text-align:center;
+    overflow-x:hidden;
+    color:white;
+}
+
+.container{
+    padding:30px;
+}
+
+.profile{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    margin-top:20px;
+    box-shadow:0 0 25px rgba(255,255,255,0.5);
+}
+
+h1{
+    font-size:3rem;
+    margin-top:20px;
+}
+
+.message{
+    max-width:700px;
+    margin:20px auto;
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+}
+
+.gallery img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.btn{
+    margin-top:30px;
+    padding:15px 30px;
+    border:none;
+    border-radius:50px;
+    background:white;
+    color:#ff4d6d;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.letter{
+    display:none;
+    max-width:700px;
+    margin:30px auto;
+    background:rgba(255,255,255,0.2);
+    padding:20px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+}
+
+.heart{
+    position:fixed;
+    font-size:25px;
+    animation:float 8s linear infinite;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+    }
+    to{
+        transform:translateY(-120vh);
+    }
+}
+
+.login-screen{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    background: linear-gradient(135deg,#ff758c,#ff7eb3);
+}
+
+.login-box{
+    background:rgba(255,255,255,0.2);
+    padding:50px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    text-align:center;
+    max-width:400px;
+}
+
+.login-box h2{
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+.login-box input{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.login-box button{
+    width:100%;
+    padding:15px;
+    margin-top:20px;
+    border:none;
+    border-radius:10px;
+    background:white;
+    color:#ff4d6d;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.login-box button:hover{
+    background:#f0f0f0;
+}
+
+.error-msg{
+    color:#ff6b6b;
+    margin-top:10px;
+    display:none;
+}
+
+.content{
+    display:none;
+}
+
+.content.show{
+    display:block;
+}
+</style>
+</head>
+<body>
+
+<!-- Login Screen -->
+<div class="login-screen" id="loginScreen">
+    <div class="login-box">
+        <h2>🔐 Enter Password</h2>
+        <input type="password" id="passwordInput" placeholder="Password" onkeypress="if(event.key==='Enter') checkPassword()">
+        <button onclick="checkPassword()">🎉 Enter</button>
+        <div class="error-msg" id="errorMsg">❌ Wrong Password!</div>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="content" id="mainContent">
+
+<!-- YAHAN APNA SONG DALO -->
+<audio id="birthdayMusic" loop>
+    <source src="Aaj se teri song.mpeg" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+<!-- YAHAN BIRTHDAY PERSON KA NAME DALO -->
+<h1>🎂 Happy Birthday My Dear Wife ❤️</h1>
+
+<!-- YAHAN MAIN PHOTO DALO -->
+<img src="IMG1.jpeg" class="profile">
+
+<!-- YAHAN SHORT MESSAGE DALO -->
+<p class="message">
+    Tum meri zindagi ka sabse khoobsurat hissa ho.
+    Aaj tumhara special din hai aur main Bhagwan ji Se Pray karta hu
+    ki tumhari har khushi tumhe mile. ❤️
+</p>
+
+<h2>📸 Our Memories</h2>
+
+<div class="gallery">
+
+<!-- YAHAN PHOTOS DALO -->
+<img src="IMG3.jpeg">
+<img src="IMG4.jpeg">
+<img src="IMG5.jpeg">
+<img src="IMG6.jpeg">
+<img src="IMG7.jpeg">
+
+</div>
+
+<button class="btn" onclick="showLetter()">
+🎁 Open Surprise
+</button>
+
+<div class="letter" id="letter">
+
+<!-- YAHAN LONG MESSAGE / LETTER DALO -->
+<h2>💌 Special Letter</h2>
+
+<p>
+
+Happy Birthday Meri Jaan ❤️
+
+Aaj ka din mere liye bhi utna hi special hai jitna tumhare liye, kyunki aaj us insaan ka birthday hai jisne meri life ko itna khoobsurat bana diya.
+
+Tum sirf meri wife nahi ho, tum meri smile, meri happiness aur meri sabse pyari feeling ho. Jab bhi tum hasti ho, lagta hai meri duniya aur bhi beautiful ho gayi hai.
+
+Main dil se pray karta hoon ki tumhari life hamesha khushiyon se bhari rahe, tumhare saare dreams poore ho.
+
+Thank you meri life me aane ke liye aur mujhe itna pyaar dene ke liye.
+
+I promise ki har birthday, har khushi aur har mushkil me main tumhare saath rahunga.
+
+I Love You So Much ❤️<br><br>
+
+Happy Birthday My Princess 👑<br>
+
+Forever Yours,
+Tumhare Patidev ji ❤️<br><br>
+
+Tumhari smile meri sabse badi khushi hai.
+Main chahta hu ki tum hamesha khush raho,
+safe raho aur apne saare sapne poore karo.<br><br>
+
+Love & Best Wishes ❤️
+</p>
+
+</div>
+
+<!-- YAHAN APNA NAME DALO -->
+<h3 style="margin-top:40px;">
+CREATED BY: <span style="color:#ff4d6d;">THAKUR HIMESH KUMAR ❤️</span>
+</h3>
+
+</div>
+
+</div> <!-- End of main content -->
+
+<script>
+
+function checkPassword(){
+    const password = document.getElementById('passwordInput').value;
+    const correctPassword = "01072007";
+    
+    if(password === correctPassword){
+        document.getElementById('loginScreen').style.display = 'none';
+        document.getElementById('mainContent').classList.add('show');
+    } else {
+        document.getElementById('errorMsg').style.display = 'block';
+        document.getElementById('passwordInput').value = '';
+        setTimeout(function(){
+            document.getElementById('errorMsg').style.display = 'none';
+        }, 2000);
+    }
+}
+
+// Auto-focus password input
+document.getElementById('passwordInput').focus();
+
+function showLetter(){
+
+    document.getElementById("letter").style.display = "block";
+
+    const music = document.getElementById("birthdayMusic");
+
+    music.play().catch(function(e){
+        console.log('Playback prevented:', e);
+    });
+
+}
+
+for(let i=0;i<40;i++){
+
+let heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=(5+Math.random()*5)+"s";
+
+
+document.body.appendChild(heart);
+
+}
+
+// Attempt to start music on first user interaction to satisfy autoplay policies
+(function(){
+    const music = document.getElementById('birthdayMusic');
+    function startOnInteraction(){
+        music.play().catch(()=>{});
+        document.removeEventListener('click', startOnInteraction);
+        document.removeEventListener('keydown', startOnInteraction);
+    }
+    document.addEventListener('click', startOnInteraction);
+    document.addEventListener('keydown', startOnInteraction);
+})();
+
+</script>
+
+</body>
+</html>
